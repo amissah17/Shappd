@@ -27,6 +27,7 @@ import {
   slidePanel,
   contrlView
 } from "./dom_loader.js";
+import '../styles/style.css'
 
 var shadowX = 14;
 var shadowY = 14;
