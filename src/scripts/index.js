@@ -1,3 +1,12 @@
+import '../styles/style.css'
+
+// importing images from my styles/image folder
+import devIcon from '../styles/Images/dev_icon.png'
+import githubIcon from '../styles/Images/github_icon.png'
+import loveIcon from '../styles/Images/love.png'
+import twitterIcon from '../styles/Images/twitter_icon.png'
+
+// importing dom elements from dom_loader
 import {
   elem,
   contrlContainer,
@@ -25,9 +34,20 @@ import {
   radToggle,
   morphToggle,
   slidePanel,
-  contrlView
 } from "./dom_loader.js";
-import '../styles/style.css'
+
+// adding image assets to html
+const githubImg = document.getElementById('github');
+const devto = document.getElementById('devto');
+const twitter = document.getElementById('twitter')
+const loveImg = document.getElementById('love')
+
+githubImg.src = githubIcon;
+devto.src = devIcon;
+twitter.src = twitterIcon;
+loveImg.src = loveIcon;
+
+// assigning some defaults to my style element variables
 
 var shadowX = 14;
 var shadowY = 14;
@@ -74,20 +94,28 @@ topShadY.addEventListener("change", topY);
 topShadBlur.addEventListener("change", topBlur);
 // end of input element eventlisteners
 
-slidePanel.addEventListener("click", showPanel); //opens the control on mobile devices
 
+//toggles the control sidebar on mobile devices
+slidePanel.addEventListener("click", showPanel); 
+
+
+// add box-shadow on load
 window.onload = () => {
   elem.style.boxShadow = ` ${shadowX}px ${shadowY}px ${blurShadow}px ${shadowColor}`;
 
   codeUpdate();
 };
 
+// variables for our computed styles after applying styles.
 var size;
 var border_rad;
 var bgd;
 var box_shads;
 
 var drawControl = false;
+
+
+// function to assign and display computed styles in the textbox/textarea
 
 function codeUpdate() {
 computedStyle = window.getComputedStyle(elem);
@@ -104,9 +132,7 @@ var active = false;
 
 function showPanel() {
   drawControl = !drawControl
-
   contrlContainer.style.width = `${drawControl? "90%" : ""}`;
-  // contrlView.style.display = 'revert';
 }
 
 function handleRadToggler() {

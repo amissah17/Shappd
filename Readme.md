@@ -4,7 +4,7 @@ CSS shapes and shadows code generator.
 
 ## Demo
 
-[Here's a live preview of the app]()
+[Here's a live preview of the app](shappd.netlify.app)
 
 ## Technologies
 
@@ -26,9 +26,9 @@ CSS shapes and shadows code generator.
 
         npm install
 
-4. Bundle code.
+4. Start development server:
 
-        npm run start (development mode) || npm run build
+        npm run dev
 
 
 ## Licence

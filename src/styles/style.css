@@ -152,7 +152,7 @@ footer div {
   padding: 20px 0;
   background-color: var(--m-background-color);
 }
-#footerIcon {
+.footerIcon {
   width: 15px;
   height: 15px;
   vertical-align: middle;
