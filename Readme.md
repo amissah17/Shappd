@@ -4,7 +4,7 @@ CSS shapes and shadows code generator.
 
 ## Demo
 
-[Here's a live preview of the app](shappd.netlify.app)
+[Here's a live preview of the app](https://shappd.netlify.app/)
 
 ## Technologies
 
