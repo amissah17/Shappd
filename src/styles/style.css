@@ -212,11 +212,20 @@ input:focus {
   .main_display{
     width: 100%;
   } 
+
+  #shappd_display {
+    scale: 0.7;
+  }
+  textarea {
+
+  }
   
   textarea {
     width: 240px;
     height: 120px;
     margin: auto;
+    scale: 0.8;
+    font-size: 0.9rem;
   }
  
   #controlContainer {
