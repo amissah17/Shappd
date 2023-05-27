@@ -4,7 +4,7 @@
   "description": "CSS shapes and shadows code generator.",
   "main": "./src/scripts/index.js",
   "scripts": {
-    "dev": "webpack serve --config ./config/webpack.dev.js",
+    "dev": "webpack --config ./config/webpack.dev.js && webpack serve --config ./config/webpack.dev.js",
     "build": "webpack --config ./config/webpack.prod.js"
   },
   "author": "Amissah Otabil",
@@ -15,6 +15,7 @@
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.1",
+    "mini-css-extract-plugin": "^2.7.6",
     "source-map": "^0.7.4",
     "style-loader": "^3.3.2",
     "webpack": "^5.79.0",
