@@ -254,3 +254,13 @@ input:focus {
     height: 30px;
   }
 }
+
+@media (max-width: 400px) {
+  #shappd_display {
+    scale: 0.6;
+  }
+  textarea {
+scale: 0.7;
+    font-size: 0.8rem;
+  }
+}
